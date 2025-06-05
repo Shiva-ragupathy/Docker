@@ -1,0 +1,7 @@
+---
+ - hosts: slave1
+   become: yes
+   name:installing tomcat in slave1
+   tasks:
+     - name: update systwn package
+       apt: upgrade=yes update_cache =yes
